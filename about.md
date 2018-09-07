@@ -4,15 +4,14 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Adam has a great passion for learning, programming, and, well, anything with technology. He's constantly asking "why...?" and "wouldn't it be cool if...?". Apart from programming, his family is his number one love in life. His wife Jenifer supports him to no end, his son Levi shares his love of Pokemon, and his daughter Annabelle keeps him in line.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+If you like video games, education, technology, or dad jokes, you've met a good friend.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+<h2>Technologies</h2>
+<ul>
+    <li>Unity</li>
+    <li>C#</li>
+    <li>HTML, CSS, JavaScript</li>
+    <li>Microsoft Excel</li>
+</ul>
