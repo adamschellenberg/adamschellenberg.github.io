@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Sometimes, I'm seen as an odd guy"
+title:  "About Me"
 date:   2018-08-22 18:24:44 -0700
 categories: blog about
 ---
