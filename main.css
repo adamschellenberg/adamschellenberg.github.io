@@ -1,5 +1,7 @@
-#logo-letters {
-    font-family: 'Mali', cursive;
-    font-size: 25px;
-    
+.nav {
+    display: inline-block;
+}
+
+.nav-item {
+    display: inline;
 }
