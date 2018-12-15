@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Challenge #2</title>
+</head>
+<body>
+
+	<!-- Create a calculator that has use in your life. -->
+	
+	<!-- I used this calculator at work to see how many ornaments we would need to create a 3d 'ornament tree',
+	 a la http://www.notmartha.org/images/other/2010dec/tree/2_greentree.jpg -->
+	 
+	 <form>
+	 	How tall do you want the tree? <input id="treeHeight" placeholder="Enter tree height in inches"> </br>
+		How many tiers do you want? <input id="numberOfTiers" placeholder="Enter number of tiers"> </br>
+		How wide do you want the tree, at the base? <input id="treeBaseWidth" placeholder="Enter tree diameter in inches"> </br>
+		<button type="button" onclick="calculateOrnamentsNeeded()">Calculate</button>
+	 </form>
+	 
+	 <div id="output"></div>
+	 
+	 <script>
+		var treeHeight;
+		var numberOfTiers;
+		var treeBaseWidth;
+		
+		var tierHeight;
+		var tierWidth;
+		var distanceBetweenOrnaments;
+		var ornamentsNeededForTier;
+		var ornamentsNeededTotal;
+		
+		var outputDiv;
+		var outputString;
+		
+		function calculateOrnamentsNeeded() {
+			// get user inputs
+			treeHeight = document.getElementById("treeHeight").value;
+			numberOfTiers = document.getElementById("numberOfTiers").value;
+			treeBaseWidth = document.getElementById("treeBaseWidth").value;
+			
+			outputDiv = document.getElementById("output");
+				// make sure user input isn't blank
+			if (treeHeight != "" && numberOfTiers != "" && treeBaseWidth != "") {
+				if (isNaN(treeHeight) || isNaN(numberOfTiers) || isNaN(treeBaseWidth)) {
+					// error message
+					outputString = "Please make sure all values are whole numbers, ex: 1, 2, 3...";
+				}
+				
+				else {
+					
+					// parseInt() for all input values
+					
+					treeHeight = parseInt(treeHeight);
+					numberOfTiers = parseInt(numberOfTiers);
+					treeBaseWidth = parseInt(treeBaseWidth);
+					
+					if (numberOfTiers < 2) {
+						outputString = "You're going to need at least 2 tiers";
+					} else if (treeHeight > numberOfTiers) {
+					
+							tierHeight = Math.round(treeHeight / (numberOfTiers - 1));
+							
+							outputString = "<p>To make a " + treeHeight + " inch tree, with " + numberOfTiers + " tiers, with a base width of " + treeBaseWidth + " inches, here's what you should do: </p> <p>Hang the tiers " + tierHeight + " inches apart. </br> On tier 1, hang a single ornament in the top center.</p>";
+							
+								//run calculation loop
+							for (var i = 1; i <= numberOfTiers; i++) {
+								// for each tier, calculate tierWidth, distanceBetweenOrnaments, 
+								// ornamentsNeededForTier, and 
+								// increase ornamentsNeededTotal by that much
+								if (i == 1) {
+									ornamentsNeededTotal = 1;
+									distanceBetweenOrnaments = 3;
+								} else {
+								tierWidth = Math.round(treeBaseWidth / (numberOfTiers - 1) * (i-1));
+								distanceBetweenOrnaments = distanceBetweenOrnaments + 0.5;
+								ornamentsNeededForTier = Math.round((tierWidth * Math.PI) / distanceBetweenOrnaments);
+								ornamentsNeededTotal = ornamentsNeededTotal + ornamentsNeededForTier;
+								
+								outputString = outputString + "<p>On tier " + i + ", the width will be " + tierWidth + " inches. </br>You'll need " + ornamentsNeededForTier + " ornaments for this tier. </br>Hang them about " + distanceBetweenOrnaments + " inches apart. </p>";
+								}
+							}
+							
+							outputString = outputString + "<p>In total, you're going to need " + ornamentsNeededTotal + " ornaments.</p>";
+					} else {
+						outputString = "The tree height should be greater than the number of tiers.";
+						}
+					
+					}
+			} else {
+				outputString = "Please enter all the information needed.";
+			}
+			
+			outputDiv.innerHTML = outputString;
+			
+		}
+		
+	 </script>
+
+</body>
+</html>

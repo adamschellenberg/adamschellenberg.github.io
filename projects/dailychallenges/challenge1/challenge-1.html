@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Challenge #1</title>
+	
+	<style>
+		form {
+			font-family: "Comic Sans MS", cursive, sans-sarif;
+		}
+		
+		input {
+			margin-bottom: 10px;
+			margin-left: 10px;
+		}
+		
+		#submitButton {
+			font-size: 100%;
+			margin-bottom: 10px;
+		}
+		
+		#output{
+			font-size: 115%;
+		}
+	</style>
+</head>
+<body>
+
+	<!-- r/dailyprogrammer challenge #1: Create a program that will ask the users name, age, and reddit username.
+		Have it tell them the information back in the following format:
+			Your name is <name>, you are <blank> years old, and your username is <blank> -->
+		
+		<!-- Ask user for name, age, and reddit name -->
+			<form>
+				What's your name?<input id="nameInput" type="text" name="userName"> </br>
+				How old are you?<input id="ageInput" type="text" name="userAge"> </br>
+				What's your Reddit username?<input id="usernameInput" type="text" name="redditUsername"> </br>
+				<button id="submitButton" type="button" onclick="outputInfo()">Submit</button>
+			</form>
+		
+		<div id="output"></div>
+		
+		<script>
+			// get user input and output them back
+			function outputInfo() {
+			
+				if (document.getElementById("nameInput").value != "" && document.getElementById("ageInput").value != "" && document.getElementById("usernameInput").value != "") {
+					var userName = document.getElementById("nameInput").value;
+					var userAge = document.getElementById("ageInput").value;
+					var userRedditName = document.getElementById("usernameInput").value;
+					
+					var outputString = "Ahh, so your name is " + userName + ", you are " + userAge + " years old, and your Reddit username is... " + userRedditName + "? Really? Well, okay... <br> Anyways, nice to meet you!"; 
+					
+					var outputDiv = document.getElementById("output");
+					
+					outputDiv.innerHTML = outputString;
+					
+					} else {
+						var outputString = "Nah, man, you're supposed to fill out the boxes before hitting 'Submit'";
+						
+						var outputDiv = document.getElementById("output");
+					
+						outputDiv.innerHTML = outputString;
+					}
+			}
+		</script>
+
+</body>
+</html>
