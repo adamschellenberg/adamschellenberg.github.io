@@ -1,7 +1,10 @@
-.nav {
-    display: inline-block;
+body {
+    background-color: #3b3e42;
+    color: white;
+    /* text-shadow: 1px 0px .5px lightgray; */
 }
 
-.nav-item {
-    display: inline;
+.jumbotron {
+    color: black;
+    margin-top: 50px;
 }
