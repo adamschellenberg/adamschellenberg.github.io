@@ -1,7 +1,10 @@
-.nav {
-    display: inline-block;
+body {
+	background-color: #404040;
+	color: #EAEAEA;
 }
 
-.nav-item {
-    display: inline;
+.jumbotron {
+	background-color: #FAFAFF;
+	color: #404040;
+	margin-top: 50px;
 }
