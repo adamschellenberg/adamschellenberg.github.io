@@ -8,3 +8,15 @@ body {
 	color: #404040;
 	margin-top: 50px;
 }
+
+.main {
+	padding: 20px;
+}
+
+.copyright {
+	text-align: center;
+}
+
+.contact {
+	padding-top: 20px;
+}
