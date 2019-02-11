@@ -20,3 +20,17 @@ body {
 .contact {
 	padding-top: 20px;
 }
+
+.banner {
+	margin-top: 50px;
+}
+
+a {
+	color: #EAEAEA;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #EAEAEA;
+}

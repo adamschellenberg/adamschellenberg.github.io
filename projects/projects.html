@@ -2,32 +2,51 @@
 <html>
 <head>
     <title>Projects</title>
-    
-    <link rel="stylesheet" href="main.css" type="text/css">
-    <script src="main.js"></script>
+		
+		<!-- bootstrap links -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- custom css/js -->
+    <link rel="stylesheet" href="../main.css" type="text/css">
+		<script src="../main.js"></script>
+		
 </head>
 <body>
 
- <div id="banner">
-  Adam Schellenberg
-
-<div class=" nav nav-bar">
-    <div class="nav-item"><a href="../index.html">Home</a></div>
-    <div class="nav-item"><a href="#">Projects</a></div>
-    <div class="nav-item"><a href="../about-me/about.html">About Me</a></div>
-</div>
+<!-- navigation bar -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Adam Schellenberg</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html">Home</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../about-me/about.html">About Me</a>
+      </li>
+    </ul>
   </div>
+</nav>
 
-<h1>Projects</h1>
+<h2 class="display-4 banner">Projects</h2>
 
 <h3>Challenges</h3>
     <ul>
-	<li>r/dailyprogrammer Challenges</li>
+	<li class="lead">r/dailyprogrammer Challenges</li>
 		<ul>
 			<li><a href="dailychallenges/challenge1/challenge-1.html">Challenge #1: Input-Output</a></li>
 			<li><a href="dailychallenges/challenge2/challenge-2.html">Challenge #2: Personal Calculator</a></li>
 		</ul>
-	<li>Game Jams</li>
+	<li class="lead">Game Jams</li>
 		<ul>
 			<li><a href="gamejams/castle-defender/index.html">Oct 2018 - 12 Hour Game Jam</a></li>
 			<li><a href="">Mar 2018 - 6 Hour Game Jam</a></li>
@@ -40,9 +59,12 @@
 			<li><a href="games/pong/index.html">Pong</a></li>
 		</ul>
 		
+
+		<!-- Reserved for later 
 	<h3>Clone Websites</h3>
 		<ul>
 		</ul>
+		-->
 		
 		<p>
 				adamschellenberg93@gmail.com</br>
