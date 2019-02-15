@@ -37,6 +37,10 @@ a:hover {
 	padding-right: 8px;
 }
 
+.display-4 {
+	margin-bottom: 25px;
+}
+
 
 /* Challenge 1 CSS */
 
@@ -52,4 +56,11 @@ a:hover {
 
 #challenge1-output{
 	font-size: 115%;
+}
+
+
+/* Challenge 2 CSS */
+
+.challenge2-input {
+	margin-bottom: 10px;
 }

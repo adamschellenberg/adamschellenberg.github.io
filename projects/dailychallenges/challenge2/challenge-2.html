@@ -10,31 +10,45 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     <!-- custom css/js -->
-    <link rel="stylesheet" href="main.css" type="text/css">
-	<script src="main.js"></script>
+    <link rel="stylesheet" href="../../../main.css" type="text/css">
+	<script src="../../../main.js"></script>
 	
 </head>
 <body>
 
-		<div id="banner">
-				Adam Schellenberg
-
-	<div class=" nav nav-bar">
-		<div class="nav-item"><a href="../../../index.html">Home</a></div>
-		<div class="nav-item"><a href="../../../projects/projects.html">Projects</a></div>
-		<div class="nav-item"><a href="../../../about-me/about.html">About Me</a></div>
+<!-- navigation bar -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+	<a class="navbar-brand" href="#">Adam Schellenberg</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	  <span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarNav">
+	  <ul class="navbar-nav">
+		<li class="nav-item">
+		  <a class="nav-link" href="../../../index.html">Home</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="../../projects.html">Projects</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="../../../about-me/about.html">About Me</a>
+		</li>
+	  </ul>
 	</div>
-	</div>
+  </nav>
 
+<div class="main">
 	<!-- Create a calculator that has use in your life. -->
 	
 	<!-- I used this calculator at work to see how many ornaments we would need to create a 3d 'ornament tree',
 	 a la http://www.notmartha.org/images/other/2010dec/tree/2_greentree.jpg -->
 	 
+	 <h2 class="display-4" h2>Challenge#2: Personal Calculator</h2>
+
 	 <form>
-	 	How tall do you want the tree? <input id="treeHeight" placeholder="Enter tree height in inches"> </br>
-		How many tiers do you want? <input id="numberOfTiers" placeholder="Enter number of tiers"> </br>
-		How wide do you want the tree, at the base? <input id="treeBaseWidth" placeholder="Enter tree diameter in inches"> </br>
+	 	How tall do you want the tree? <input class="challenge2-input" id="treeHeight" placeholder="Enter tree height in inches"> </br>
+		How many tiers do you want? <input class="challenge2-input" id="numberOfTiers" placeholder="Enter number of tiers"> </br>
+		How wide do you want the tree, at the base? <input class="challenge2-input" id="treeBaseWidth" placeholder="Enter tree diameter in inches"> </br>
 		<button type="button" onclick="calculateOrnamentsNeeded()">Calculate</button>
 	 </form>
 	 
@@ -119,20 +133,24 @@
 	 </script>
 
 
-<p>
+<div class="contact">
+	<p>
 		adamschellenberg93@gmail.com</br>
 		San Tan Valley, AZ
-	</p>    
+	</p>
+</div>
 	
-	<div id="social-media">
-		<a href="https://twitter.com/webdevver" target="_blank"><img src="../../../assets/img/twitter-logo.png" height="64px" alt="Twitter"></a>
-		<a href="https://github.com/adamschellenberg" target="_blank"><img src="../../../assets/img/github-logo.png" height="64px" alt="Github"></a>
-		<a href="https://www.linkedin.com/in/adam-schellenberg-aa6263b7/" target="_blank"><img src="../../../assets/img/linkedin-logo.png" height="64px" alt="LinkedIn"></a>
-	</div>
-			  
-	<div>
-		All content copyright Adam Schellenberg &copy; 2018 - All rights reserved
-	</div>
+<div id="social-media">
+	<a href="https://twitter.com/webdevver" target="_blank"><img class="social-media-icons" src="../../../assets/img/twitter-logo.png" alt="Twitter"></a>
+	<a href="https://github.com/adamschellenberg" target="_blank"><img class="social-media-icons" src="../../../assets/img/github-logo.png" alt="Github"></a>
+	<a href="https://www.linkedin.com/in/adam-schellenberg-aa6263b7/" target="_blank"><img class="social-media-icons" src="../../../assets/img/linkedin-logo.png" alt="LinkedIn"></a>
+</div>
+
+<div class="copyright">
+	All content copyright Adam Schellenberg &copy; 2019 - All rights reserved
+</div>
+
+</div>
 
 </body>
 </html>
