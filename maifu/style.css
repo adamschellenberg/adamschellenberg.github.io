@@ -1,0 +1,22 @@
+#gameScreen {
+    background-image: url("assets/img/temp-bedroom.jpg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: auto;
+    
+}
+
+.container {
+    width: 80%;
+    max-width: 700px;
+}
+
+#maifuDiv {
+    margin: auto;
+    width: 25%;
+}
+
+#maifuImg {
+    width: 100%;
+}
