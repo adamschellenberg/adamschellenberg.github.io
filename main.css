@@ -69,7 +69,7 @@ a:hover {
 	display: block;
 	content: " ";
 	margin-top: -80px;
-	height: 80px;
+	height: 40px;
 	visibility: hidden;
 	pointer-events: none;
 }
