@@ -127,18 +127,7 @@ span:nth-child(7) {
 	position: relative;
 }
 
-@media (max-width: 576px) {
-	#wavy-text {
-		font-size: 3rem;
-	}
 
-	.navbar-brand {
-		font-size: 1.1rem;
-	}
-	.nav-link {
-		font-size: .95rem;
-	}	
-}
 
 
 #wavy-text span {
@@ -155,4 +144,42 @@ span:nth-child(7) {
 	50% {
 		transform: translateY(-3px)
 	}
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 576px) {
+	#wavy-text {
+		font-size: 3rem;
+	}
+
+	.navbar-brand {
+		font-size: 1.1rem;
+	}
+	.nav-link {
+		font-size: .95rem;
+	}	
+
+	.card {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.project-card {
+		margin-top: 15px;
+	}
+
+	#about-me-img {
+		float: none;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding-right: 0px;	
+	}
+
+	.display-4 {
+		font-size: 2.75rem;;
+	}
+
 }
