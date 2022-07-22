@@ -25,13 +25,14 @@ body {
 
 .copyright {
 	text-align: center;
+	padding-top: 20px;
 }
 
 .contact {
 	padding-top: 20px;
 }
 
-a {
+/*a {
 	color: #EAEAEA;
 	text-decoration: none;
 }
@@ -39,7 +40,7 @@ a {
 a:hover {
 	text-decoration: underline;
 	color: #EAEAEA;
-}
+}*/
 
 .social-media-icons {
 	height: 30px;
@@ -48,6 +49,11 @@ a:hover {
 
 .display-4 {
 	margin-bottom: 25px;
+}
+
+.card {
+	width: 14rem;
+	height: 100%;
 }
 
 /* responsive design */
