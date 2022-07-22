@@ -56,16 +56,31 @@ a:hover {
 	height: 100%;
 }
 
-#about-me-section {
-	padding-top: 70px;
+#about-me-section::before {
+	display: block;
+	content: " ";
+	margin-top: -80px;
+	height: 80px;
+	visibility: hidden;
+	pointer-events: none;
 }
 
-#skills-section {
-	padding-top: 70px;
+#skills-section::before {
+	display: block;
+	content: " ";
+	margin-top: -80px;
+	height: 80px;
+	visibility: hidden;
+	pointer-events: none;
 }
 
-#projects-section {
-	padding-top: 70px;
+#projects-section::before {
+	display: block;
+	content: " ";
+	margin-top: -80px;
+	height: 80px;
+	visibility: hidden;
+	pointer-events: none;
 }
 
 /* responsive design */
@@ -150,7 +165,7 @@ span:nth-child(7) {
 /* MEDIA QUERIES */
 @media (max-width: 576px) {
 	#wavy-text {
-		font-size: 3rem;
+		font-size: 2.7rem;
 	}
 
 	.navbar-brand {
