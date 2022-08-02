@@ -11,17 +11,28 @@
 	<style>
 		.display-5 {
 			font-size: 4rem;
+			margin-top: 50px;
+			margin-bottom: 50px;
 		}
 		form {
-			font-size: 2rem;
+			font-size: 2.2rem;
 		}
 		
 		#output {
-			font-size: 2rem;
+			font-size: 2.2rem;
 		}
 		
 		.btn {
-			font-size: 2rem;
+			font-size: 2.2rem;
+		}
+		
+		.form-control {
+			width: 30%;
+			font-size: 2.2rem;
+		}
+		
+		#toconvertamount {
+			width: 40%;
 		}
 	</style>
 
@@ -30,7 +41,7 @@
 
 	<div class="container">
 		<h1 class="display-5">Convert Values</h1>
-		<form class="my-3">
+		<form>
 			<label for="toconvert">Convert value of:</label><br>
 			<input type="number" id="toconvertamount" name="toconvert" placeholder="numbers only">
 			<select class="form-control" id="toconvert">
