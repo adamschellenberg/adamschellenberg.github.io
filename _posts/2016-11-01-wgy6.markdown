@@ -1,0 +1,7 @@
+---
+layout: default
+modal-id: 2
+img: wgy6.png
+alt: wgy6 logo
+description: <a href='https://wgy6.rentavetservices.com/' target='_blank'>WGY6</a>(We Got Your Six) is a charity from Rent-A-Vet Services that helps veterans learn home improvement skills with the goal of finding stable work as a handyman.
+---
