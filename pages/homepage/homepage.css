@@ -1,0 +1,27 @@
+#main-homepage {
+    padding-bottom: 50px;
+}
+
+#avatar-image {
+    width: 250px;   
+}
+
+.tools-label {
+    font-size: 1.8rem;
+}
+
+.tool-icon-svg {
+    height: 80px;
+    padding: 10px;;
+}
+
+.tools-row {
+    padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    .blurb-bio {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
