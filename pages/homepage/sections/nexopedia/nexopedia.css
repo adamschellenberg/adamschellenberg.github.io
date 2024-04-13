@@ -1,0 +1,8 @@
+#nexopedia-label a {
+    color: #FBB13C;
+    text-decoration: none;
+}
+
+#nexopedia-label a:hover {
+    text-decoration: underline;
+}

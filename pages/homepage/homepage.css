@@ -6,18 +6,19 @@
     width: 250px;   
 }
 
-.tools-label {
+.section-label {
     font-size: 1.8rem;
 }
 
-.tool-icon-svg {
+.icon-svg {
     height: 80px;
-    padding: 10px;;
+    padding: 10px;
 }
 
-.tools-row {
-    padding-bottom: 20px;
+.blockquote-footer {
+    padding-top: 10px;
 }
+
 
 @media only screen and (min-width: 768px) {
     .blurb-bio {
