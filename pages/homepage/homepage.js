@@ -4,7 +4,8 @@ const projectsSection = document.getElementById("projects-root");
 
 let projects = [
     "nexopedia",
-    "fightingfoodons"
+    "fightingfoodons",
+    "adamschellenberg"
 ];
 
 toolsSection.innerHTML = "";
